@@ -1,0 +1,80 @@
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.menu-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 429px;
+  height: 100%;
+  background: #0a0a0a;
+  z-index: 1000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 66px;
+  gap: 24px;
+}
+
+.menu-link {
+  display: block;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu-link:hover {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.menu-link:active {
+  opacity: 0.6;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-close-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-close-icon {}
+
+.menu-divider {
+  width: 100%;
+  height: 1px;
+  background: #6c6c6c;
+  margin: 18px 0 8px;
+}
