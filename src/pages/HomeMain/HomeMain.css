@@ -1,5 +1,3 @@
-.home-main-page {}
-
 .home-main-content {
   position: relative;
   background-image: url('/background_home_main.png');
@@ -64,17 +62,33 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  /* mặc định giữ nguyên như hiện tại: nền sáng, chữ đen */
   background-color: #fdfefe;
   color: #0a0a0a;
   padding: 0 16px;
   clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0% 50%);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.12s ease-out, color 0.12s ease-out, border-color 0.12s ease-out;
 }
 
 .home-main-btn-dark {
+  /* mặc định nút tối như cũ */
   background-color: #1d1d1d;
   border-color: #1d1d1d;
   color: #ffffff;
+}
+
+.home-main-btn:hover {
+  /* trắng -> đen: nền đen, chữ trắng */
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.home-main-btn-dark:hover {
+  /* đen -> trắng: nền trắng, chữ đen */
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
 
 .home-main-btn-icon {
@@ -116,7 +130,12 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
+}
+
+.pipeline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
 }
 
 .pipeline-card-top-bar {
@@ -212,7 +231,12 @@
   position: relative;
   overflow: hidden;
   background-color: white;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
+}
+
+.capability-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
 }
 
 .capability-card-content {
@@ -320,7 +344,12 @@
 .usercase-card {
   position: relative;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
+}
+
+.usercase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
 }
 
 .usercase-bg {
@@ -454,10 +483,12 @@
   gap: 8px;
 }
 
-.footer-list li {
+.footer-list li a {
   font-size: 14px;
   font-family: 'Roboto';
   color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -491,7 +522,6 @@
     padding: 130px 80px 72px;
   }
 
-  .home-main-title {}
 }
 
 @media (max-width: 1023px) {

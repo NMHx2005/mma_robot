@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Logo from '../Logo/Logo'
-import Navigation from '../Navigation/Navigation'
 import SocialIcons from '../../Home/SocialIcons/SocialIcons'
 import MenuModal from './MenuModal'
 import './Header.css'

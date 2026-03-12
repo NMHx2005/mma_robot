@@ -374,10 +374,10 @@ const HomeMain = () => {
             <div className="footer-col">
               <h4 className="footer-heading">Product</h4>
               <ul className="footer-list">
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Documentation</li>
-                <li>API Reference</li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
               </ul>
             </div>
 
@@ -385,10 +385,10 @@ const HomeMain = () => {
             <div className="footer-col">
               <h4 className="footer-heading">Company</h4>
               <ul className="footer-list">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Contact</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </div>
 
@@ -396,10 +396,10 @@ const HomeMain = () => {
             <div className="footer-col">
               <h4 className="footer-heading">Resources</h4>
               <ul className="footer-list">
-                <li>Tutorials</li>
-                <li>Examples</li>
-                <li>Community</li>
-                <li>Support</li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support</a></li>
               </ul>
             </div>
           </div>
