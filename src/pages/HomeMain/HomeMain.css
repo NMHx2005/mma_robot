@@ -7,9 +7,9 @@
   z-index: 2;
   max-height: 700px;
   height: 700px;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
-  padding: 140px 80px;
+  padding: 140px 142px;
   box-sizing: border-box;
 }
 
@@ -518,6 +518,12 @@
 
 .footer-links a {
   cursor: pointer;
+}
+
+@media (max-width: 1919px) and (min-width: 1440px) {
+  .home-main-content {
+    padding: 140px 80px;
+  }
 }
 
 @media (max-width: 1439px) {
